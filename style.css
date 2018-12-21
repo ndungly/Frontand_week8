@@ -13,7 +13,7 @@ body {
     grid-template-areas:
     "header header header"
     ". middle-content ."
-    "footer footer footer";
+    ". footer .";
 }
 
 /*===================header====================*/
@@ -48,7 +48,7 @@ body {
 }
 
 .navigation {
-    text-decoration: none;
+    margin: 2rem 0;
 }
 
 .navigation li {
@@ -60,7 +60,7 @@ body {
     text-transform: uppercase;
     color: #5a6175;
     padding: 2rem;
-    font-size: .9rem;
+    font-size: .8rem;
     letter-spacing: .15rem;
 }
 /*===================middle====================*/
@@ -103,11 +103,16 @@ body {
 
 .hero-title {
     color: #5a6175;
-    font-size: 3rem;
+    font-size: 4.5rem;
     text-decoration: none;
     font-weight: 700;
-    line-height: 3rem;
+    line-height: 4.5rem;
 }
+
+.hero-title:hover {
+    color: #F58B44;
+}
+
 .secondary-article {
     display: flex;
     flex-direction: column;
@@ -121,9 +126,10 @@ body {
 .article-category {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: #5a6175;
     letter-spacing: 0.1rem;
- 
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -132,11 +138,14 @@ body {
     font-size: 2rem;
     color: #5a6175;
     font-weight: 700;
+    margin-top: .5rem;
 }
 
 .article-description {
     font-size: 1.2rem;
     line-height: 1.5rem;
+    line-height: 1.8rem;
+    color: #5a6175;
 }
 
 .article-author {
@@ -144,6 +153,7 @@ body {
     color: #b2b2b2;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
+    margin-top: 2rem;
 }
 
 /*===================sidebar====================*/
@@ -176,10 +186,14 @@ body {
 .aside-article {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 
-.aside-article a {
+.aside-title {
     text-decoration: none;
+    color: #5a6175;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .aside-image {
@@ -190,6 +204,51 @@ body {
 
 .footer {
     grid-area: footer;
-    display: flex;
-    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    padding-top: 3rem;
+}
+
+.blog-categories {
+    margin-left: 3rem;
+}
+
+.headspace-nav {}
+
+.download-app {}
+
+.read-more {
+    margin-right: 3rem;
+}
+
+
+.footer-nav-title {
+    color: #5a6175;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+}
+
+.footer-nav {
+    list-style-type: none;
+    position: relative;
+    left: -2.6rem;
+}
+
+.footer-nav li {
+    padding: 1rem 0;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #5a6175;
+}
+
+.app-img {
+    padding-right: 4rem;
+    margin-top: 1rem;
+    width: 100%;
 }
